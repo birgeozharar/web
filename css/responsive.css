@@ -1,0 +1,162 @@
+@charset "uft-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    width: 99%;
+}
+.container{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: darkcyan;
+}
+section.bolum1{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.slider{
+    width: 750px;
+    height: 160px;
+    background-color: darkgrey;
+    flex-grow: 1;
+    margin: 5px 0 5px 0;
+    flex-shrink: 2;
+}
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 160px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 5px 0 0 5px;
+    flex-direction: row;
+    align-content: stretch;
+}
+.acıklama{
+    flex-basis: 100%;
+    margin-bottom: 5px;
+    background-color: thistle;
+}
+/* hizalamak için */
+.acıklama:nth-last-child(1){
+    margin-bottom: 0;
+}
+section.bolum2{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    flex-wrap:nowrap;
+}
+article{
+    flex-basis: 750px;
+    height: 200px;
+    background-color: violet;
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+.yanmenu{
+    flex-basis: 250px;
+    background-color: yellowgreen;
+    margin-left: 5px;
+    flex-shrink: 1;
+    flex-grow: 2;
+    align-self: stretch;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: tomato;
+    margin-top: 5px;
+}
+
+/* tablet boyutu */
+@media screen and (max-width:768px){
+    section.bolum1{
+        flex-direction: column;
+    }
+    .slider{
+        width: 100%;
+        margin:5px 0 5px 0;
+    }
+    aside{
+        margin: 0;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        flex-grow: 1;
+        width: 100%;
+        display: flex;
+        height: 70px;
+    }
+    .acıklama{
+        width: 100px;
+        flex-grow: 1;
+        margin-bottom: 5px;
+        margin-right: 3px;
+        height: 60px;
+    }
+}
+
+/* cep tel boyutu */
+@media screen and (max-width:320px){
+section.bolum1{
+    width: 100%;
+    margin: 0;
+    padding:0;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.slider{
+    width: 100%;
+    height: 160px;
+    margin: 5px 0 5px 0;
+}
+aside{
+    margin: 0;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    height: 150px;
+    margin-top: 5px;
+}
+.acıklama{
+    width: 100px;
+    flex-grow: 1;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    height: 120px;
+}
+section.bolum2{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    height: 150px;
+}
+article{
+    flex-grow: 1;
+    width: 150px;
+    margin: 5px 0;
+    height: 150px;
+}
+.yanmenu{
+    display: none;
+}
+}

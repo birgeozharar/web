@@ -1,0 +1,56 @@
+nav{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li{
+    display: block;
+    width: 150px;
+   /* float: left;   /*yatay olması için*/
+
+}
+nav ul li a{
+    display: block;
+    padding: 20px 15px;
+    background-color: slategrey;
+    color: navy;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    width: 150px;
+    text-align: center;
+}
+nav ul li a:hover{
+    background-color: palevioletred;
+    color: pink;
+    transition-duration: 0.5s;
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    width: 150px;
+    margin: -60px 180px;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li{
+    display: block;
+    width: 100px;
+}
+nav ul li ul a{
+    display: block;
+    width: 150px;
+    text-align: left;
+}
+.sol{border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.sag{border-top-right-radius: 15px;
+    border-bottom-right-radius:15px;
+}
+
+

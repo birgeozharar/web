@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8">
+    <title>Formlar</title>
+
+</head>
+
+    <form name="Bilgi" id="bilgi" method="GET" action="">
+        Adınız: <input type="text" id="ad" name="ad">
+        Adres: <textarea name="adres" id="adres" cols="10" rows="5"></textarea>
+
+        <input type="submit" name="gonder" id="gonder"><br>
+
+    </form>
+    <body> 
+
+        <form action="" name="bilgiler" id="bilgiler" method="get"><br>
+            
+            Cinsiyet:<br>
+           <input type="radio" name="Cinsiyet" id="Erkek" value="E"> Erkek<br>
+           <input type="radio" name="Cinsiyet" id="Kadin" value="K"> Kadın<br>
+            <br>
+           Medeni Durum:<br>
+           <input type="radio" name="Medeni Durum" id="Evli" value="E"> Evli<br>
+           <input type="radio" name="Medeni Durum" id="Bekar" value="K"> Bekar<br>
+            <br>
+           Hobiler:<br>
+           <input type="checkbox" name="Hobiler" id="Spor" value="1"> Spor
+           <input type="checkbox" name="Hobiler" id="Seyahat" value="2"> Seyahat
+           <input type="checkbox" name="Hobiler" id="Kitap" value="3"> Kitap
+           <input type="checkbox" name="Hobiler" id="Müzik" value="4"> Müzik
+           <input type="checkbox" name="Hobiler" id="Oyun" value="5">  Oyun
+
+           <input type="submit" name="gonder" id="gonder"><br>
+        </form>
+        <br>
+
+        <form name="form" method="POST" id="form">
+            Kullanıcı Adı: <input type="text" name="kullanıcı_adı" id="kullanıcı_adı" required autofocus><br>
+            <br>
+            Password: <input type="password" name="password" id="password" required> <br>
+            <br>
+            Telefon: <input type="tel" name="telefon" id="telefon" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"> <br>
+            <br>
+            Eposta: <input type="email" name="eposta" id="eposta" required placeholder="asd@asd.asd"> <br>
+            <br>
+            Web Sitesi: <input type="url" name="webadres" id="webadres" required placeholder="http://asd.asd">
+            <br>
+            <p>
+                <input type="submit" name="gonder" id="gonder">
+            </p>
+        </form>
+
+        <form id="form" name="form" method="GET">
+            <select  name="İller" id="İller" required>
+                <option value="Adana">Adana</option>
+                <option value="İstanbul">İstanbul</option>
+                <option value="Eskişehir">Eskişehir</option><br>
+            </select>
+            <br>
+            <input type="submit" value="gönder">
+        </form>
+        <br>
+
+            <form id="form" name="form" method="GET">
+                Yaşınız: <input type="number" name="yas" id="yas" min="15" max="100" placeholder="15-100"> <br>
+                 <br>
+                 <input type="submit" value="gönder">
+                 <br>
+                 Resminizi seçin: <input type="file" name="dosya" id="dosya"><br>
+                <br>
+                 <input type="reset" name="reset" id="reset">
+            </form>
+            <br>
+
+            <form id="form" name="form" method="GET">
+               <label for="Ay">Ay: </label> 
+               <input type="month" name="ay" id="ay" min="2018-01" max="2022-05"><br>
+
+               Hafta: <input type="week" name="hafta" id="hafta"><br>
+
+               Tarih: <input type="date" name="tarih" id="tarih"><br>
+
+               Saat: <input type="time" name="saat" id="saat" value="13:15"><br>
+
+               Tarih ve Saat:  <input type="datetime-local" name="tarihsaat" id="tarihsaat"><br>
+               <input type="submit" name="gonder" id="gonder" value="gönder">
+            </form>
+    </body>
+
+</html>

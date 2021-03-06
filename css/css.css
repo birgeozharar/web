@@ -1,0 +1,63 @@
+@charset "uft-8";
+/*css file*/
+
+#container{
+    width: 960px;
+    height: 680px;
+    background-color: cornsilk;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+}
+header#banner{
+    width: 940px;
+    height: 100px;
+    background-color: darkgoldenrod;
+    margin: 0 10px;
+}
+nav{
+    width: 150px;
+    height: 450px;
+    margin: 10px;
+    background-color: rgba(88, 102, 125, 0.517);
+    float: left;
+}
+section{
+    width: 600px;
+    height: 450px;
+    margin: 10px;
+    background-color: rgb(126, 173, 189);
+    float: left;
+    padding-top: 10px;
+}
+aside{
+    width: 150px;
+    height: 450px;
+    margin: 10px;
+    background-color: rgba(88, 102, 125, 0.517);
+    float: left;
+}
+footer#sitesonu{
+    width: 940px;
+    height: 80px;
+    margin: 10px;
+    background-color: khaki;
+    float: left;
+}
+#makale{
+    width: 450px;
+    margin: 0 auto;
+    height: 50px;
+    background-color: rosybrown;
+}
+article.makale{
+    width: 450px;
+    height: 200px;
+    background-color: steelblue;
+    margin: 10px auto;
+}
+footer#makalesonu{
+    width: 450px;
+    height: 100px;
+    background-color: slategrey;
+    margin: 10px auto;
+}
